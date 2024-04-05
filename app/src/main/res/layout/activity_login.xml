@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_login"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textViewEntrarTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Início de Sessão"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/editTextEntrarEmail"
+        android:layout_width="297dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/retangle_corner"
+        android:hint="Email"
+        android:inputType="text"
+        android:padding="18dp"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextEntrarPassword"
+        android:layout_width="297dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/retangle_corner"
+        android:hint="Palavra-passe"
+        android:inputType="text"
+        android:padding="18dp"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="40dp"
+        android:text="Entrar"
+        android:backgroundTint="@color/cor_azul"
+        android:textColor="@color/white"
+        android:padding="18dp"
+        android:layout_marginTop="550dp"
+        android:textSize="20sp"
+        android:id="@+id/botao_entrar"/>
+
+
+
+</RelativeLayout>

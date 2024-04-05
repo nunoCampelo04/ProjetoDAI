@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_login"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textViewRegisterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registo"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+    <EditText
+        android:id="@+id/editTextRegisterName"
+        android:layout_width="297dp"
+        android:layout_height="74dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/retangle_corner"
+        android:hint="Nome"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:padding="18dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextRegisterEmail"
+        android:layout_width="297dp"
+        android:layout_height="74dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/retangle_corner"
+        android:hint="Email"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:padding="18dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextRegisterPassword"
+        android:layout_width="297dp"
+        android:layout_height="74dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/retangle_corner"
+        android:hint="Palavra-passe"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:padding="18dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="38dp"
+        android:text="Registar"
+        android:backgroundTint="@color/cor_azul"
+        android:textColor="@color/white"
+        android:padding="18dp"
+        android:layout_marginTop="550dp"
+        android:textSize="20sp"
+        android:id="@+id/botaoRegistar"/>
+
+
+
+</RelativeLayout>
