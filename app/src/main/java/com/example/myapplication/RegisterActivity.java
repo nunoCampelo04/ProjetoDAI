@@ -13,7 +13,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     private EditText nome, email, password;
     private Button botao_registar;
-    private MyDatabaseHelper dbHelper;
+    FirebaseService firebaseService = new FirebaseService();
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -26,7 +27,6 @@ public class RegisterActivity extends AppCompatActivity {
         nome = findViewById(R.id.editTextRegisterName);
         botao_registar = findViewById(R.id.botaoRegistar);
 
-        dbHelper = new MyDatabaseHelper(this);
 
         botao_registar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,20 +35,11 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = RegisterActivity.this.password.getText().toString();
                 String nome = RegisterActivity.this.nome.getText().toString();
 
-                if (dbHelper.existeUser(email)) {
-                    Toast.makeText(RegisterActivity.this, "Já existe uma conta registada com este email", Toast.LENGTH_SHORT).show();
-                    return; // Impede a criação da conta
-                }
 
                 User user = new User(email, password, nome);
+                firebaseService.saveUser(user);
 
-                long newRowId = dbHelper.inserirUser(user);
-                if (newRowId != -1) {
-                    Toast.makeText(RegisterActivity.this, "Conta registada para " + email, Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(RegisterActivity.this, "Falha ao registar a conta", Toast.LENGTH_SHORT).show();
-                }
-
+                Toast.makeText(RegisterActivity.this, "Conta registrada para " + nome, Toast.LENGTH_SHORT).show();
                 finish();
             }
         });

@@ -13,8 +13,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText email, password;
     private Button botao_login;
-    private MyDatabaseHelper dbHelper;
-
+    FirebaseService firebaseService = new FirebaseService();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +23,6 @@ public class LoginActivity extends AppCompatActivity {
         password = findViewById(R.id.editTextEntrarPassword);
         botao_login = findViewById(R.id.botao_entrar);
 
-        dbHelper = new MyDatabaseHelper(this);
 
         botao_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,11 +30,18 @@ public class LoginActivity extends AppCompatActivity {
                 String emailText = email.getText().toString();
                 String passwordText = password.getText().toString();
 
-                if (dbHelper.verificarLogin(emailText, passwordText)) {
-                    Toast.makeText(LoginActivity.this, "Login bem sucedido", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(LoginActivity.this, "Dados inválidos", Toast.LENGTH_SHORT).show();
-                }
+                firebaseService.loginUser(emailText, passwordText, new FirebaseService.LoginCallback() {
+                    @Override
+                    public void onLogin(User user) {
+                        if (user != null && user.getPassword().equals(passwordText)) {
+                            // Login bem-sucedido
+                            Toast.makeText(LoginActivity.this, "Login bem-sucedido para " + user.getNome(), Toast.LENGTH_SHORT).show();
+                        } else {
+                            // Login falhou
+                            Toast.makeText(LoginActivity.this, "Credenciais inválidas", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
             }
         });
     }
