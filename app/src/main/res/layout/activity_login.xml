@@ -11,41 +11,39 @@
     <EditText
         android:id="@+id/editTextEntrarEmail"
         android:layout_width="297dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="180dp"
         android:background="@drawable/botao_retangular"
         android:hint="Email"
         android:inputType="text"
-        android:padding="18dp"
+        android:padding="10dp"
         android:textColorHint="@color/black"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/editTextEntrarPassword"
         android:layout_width="297dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="270dp"
         android:background="@drawable/botao_retangular"
         android:hint="Palavra-passe"
         android:inputType="text"
-        android:padding="18dp"
+        android:padding="10dp"
         android:textColorHint="@color/black"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
 
 
     <Button
-        android:layout_width="240dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="40dp"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="47dp"
         android:text="Entrar"
         android:backgroundTint="@color/vermelho"
         android:textColor="@color/white"
-        android:padding="18dp"
-        android:layout_marginTop="550dp"
-        android:textSize="30sp"
+        android:padding="10dp"
+        android:layout_marginTop="400dp"
+        android:textSize="20sp"
         android:id="@+id/botao_entrar"/>
 
 

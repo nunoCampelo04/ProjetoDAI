@@ -12,25 +12,25 @@
 
     <Button
         android:id="@+id/buttonRegister"
-        android:layout_width="240dp"
-        android:layout_height="70dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="100dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:text="Registar"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:backgroundTint="@color/vermelho"
         android:textColor="@color/white" />
 
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="240dp"
-        android:layout_height="70dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_above="@id/buttonRegister"
         android:layout_centerHorizontal="true"
         android:text="Entrar"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:backgroundTint="@color/vermelho" />
 
     <LinearLayout
@@ -40,29 +40,26 @@
 
         <TextView
             android:id="@+id/no_internet_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
             android:gravity="center"
             android:layout_marginTop="170dp"
             android:onClick="tenteReconectar"
             android:text="Sem conexão com a internet"
             android:textColor="@android:color/holo_red_dark"
             android:textSize="24sp"
+
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/noInternet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/no_internet_text_view"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:src="@drawable/ic_no_wifi"
-        />
-
-
-
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/noInternet"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_no_wifi"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="150dp"/>
 
 
 </RelativeLayout>
