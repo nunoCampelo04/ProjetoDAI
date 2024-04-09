@@ -8,15 +8,6 @@
     android:orientation="vertical">
 
 
-    <TextView
-        android:id="@+id/textViewRegisterTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registo"
-        android:textColor="@android:color/white"
-        android:textSize="40sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp" />
     <EditText
         android:id="@+id/editTextRegisterName"
         android:layout_width="297dp"
@@ -40,7 +31,7 @@
         android:layout_marginEnd="38dp"
         android:background="@drawable/botao_retangular"
         android:hint="Email"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:textColorHint="@color/white"
         android:padding="18dp"
         android:textSize="20sp" />

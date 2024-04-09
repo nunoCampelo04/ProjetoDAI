@@ -14,10 +14,11 @@ public class FirebaseService {
     public FirebaseService() {
         mDatabase = FirebaseDatabase.getInstance();
         mUsersRef = mDatabase.getReference("users");
+        System.out.println(mDatabase);
     }
 
     public void saveUser(User user) {
-        mUsersRef.child(user.getUsername()).setValue(user);
+        mUsersRef.child(user.getEmail()).setValue(user);
     }
     public interface LoginCallback {
         void onLogin(User user);

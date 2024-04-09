@@ -33,4 +33,36 @@
         android:textSize="30sp"
         android:backgroundTint="@color/vermelho" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/no_internet_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="170dp"
+            android:onClick="tenteReconectar"
+            android:text="Sem conexão com a internet"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/noInternet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/no_internet_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_no_wifi"
+        />
+
+
+
+    </LinearLayout>
+
+
 </RelativeLayout>
