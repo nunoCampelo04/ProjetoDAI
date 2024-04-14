@@ -1,14 +1,14 @@
 {
   "project_info": {
-    "project_number": "608892812156",
-    "firebase_url": "https://daioficial-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "daioficial",
-    "storage_bucket": "daioficial.appspot.com"
+    "project_number": "103252356615",
+    "firebase_url": "https://projetodai-cdcd1-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "projetodai-cdcd1",
+    "storage_bucket": "projetodai-cdcd1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:608892812156:android:3fcdd9e393f2c99a6dc2f9",
+        "mobilesdk_app_id": "1:103252356615:android:8a62222df81720c41204a2",
         "android_client_info": {
           "package_name": "com.example.myapplication"
         }
@@ -16,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDJqpDo3_G8Lz1xDJKAniQuvkSGIE3swM0"
+          "current_key": "AIzaSyDBfI2HA0SQRtE7zJJ7HnIcKvWByMRHTP0"
         }
       ],
       "services": {

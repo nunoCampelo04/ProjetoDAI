@@ -51,17 +51,16 @@
         android:textSize="20sp" />
 
     <Button
+        android:id="@+id/botaoRegistar"
         android:layout_width="210dp"
         android:layout_height="55dp"
         android:layout_marginLeft="76dp"
-        android:text="Registar"
-        android:backgroundTint="@color/vermelho"
-        android:textColor="@color/white"
-        android:padding="10dp"
         android:layout_marginTop="470dp"
-        android:textSize="20sp"
-        android:id="@+id/botaoRegistar"/>
-
+        android:backgroundTint="@color/vermelho"
+        android:padding="10dp"
+        android:text="Registar"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
 
 </RelativeLayout>

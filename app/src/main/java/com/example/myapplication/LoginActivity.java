@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -52,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(LoginActivity.this, "Login bem-sucedido para " + user.getEmail(), Toast.LENGTH_SHORT).show();
-                            //atividade
+                            openMapaActivity();
                         } else {
                             String errorMessage = "Falha no login.";
                             if (task.getException() != null) {
@@ -75,5 +76,11 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    public void openMapaActivity(){
+        Intent intent = new Intent(LoginActivity.this, MapaActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
